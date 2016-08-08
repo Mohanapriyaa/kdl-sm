@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int *a=(int *)malloc(100);
+	int h;
+	cin>>h;
+if(h>0)
+{
+	
+	
+	///To get value
+	for(int i=0;i<h;i++)
+	{   
+		cin>>a[i];
+	
+	}
+	//to print value 
+	for(int k=0;k<h;k++)
+	{int flag=0;
+		for(int j=k+1;j<h;j++)
+		{
+			if(a[k]==a[j])
+			{
+			cout<<a[k];flag=1;
+			break;
+			}
+		}
+		if(flag==1)
+	    break;	
+	}
+}else 
+cout<<"tye correct value";
+	return 0;
+}
